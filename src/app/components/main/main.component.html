@@ -1,0 +1,10 @@
+<div class="row container m-4">
+  <div class="col-3">
+        <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="col">
+    <router-outlet (resultadoEvent)="ResultadoCalculo(resultado)"></router-outlet>
+    <app-mostrar-resultado [resultado]="resultado"></app-mostrar-resultado>
+  </div>
+</div>
