@@ -8,8 +8,6 @@ import { CalculosService } from 'src/app/services/calculos.service';
 })
 export class CustomPipesComponent implements OnInit{
 
-  name:string = 'hola';
-  name2:string = 'hola';
   constructor(private servicio:CalculosService) {
     this.servicio.MostrarResultado = false;
   }
