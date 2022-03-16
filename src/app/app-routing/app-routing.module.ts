@@ -6,6 +6,7 @@ import { Pagina3Component } from '../components/pagina3/pagina3.component';
 import { Pagina4Component } from '../components/pagina4/pagina4.component';
 import { Pagina5Component } from '../components/pagina5/pagina5.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CustomPipesComponent } from '../components/custom-pipes/custom-pipes.component';
 
 const routes: Routes = [
   {
@@ -29,9 +30,14 @@ const routes: Routes = [
     component:Pagina5Component
   },
   {
+    path:'pipes',
+    component:CustomPipesComponent
+  },
+  {
     path:'**',
     redirectTo:''
   }
+
 ];
 
 @NgModule({

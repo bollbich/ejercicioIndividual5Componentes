@@ -18,6 +18,7 @@ export class Pagina1Component implements OnInit {
   constructor(public servicio:CalculosService) { }
 
   ngOnInit(): void {
+    this.servicio.MostrarResultado = true;
   }
 
   Sumar():void{

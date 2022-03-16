@@ -1,9 +1,12 @@
 
-  <input type="number" name="num1" placeholder="ingrese numero" class="form-control" [(ngModel)]="num1">
-  <input type="number" name="num2" placeholder="ingrese numero" class="form-control" [(ngModel)]="num2">
+  <input type="text" name="num1" placeholder="ingrese largo" class="form-control" [(ngModel)]="num1">
+  <input type="text" name="num2" placeholder="ingrese ancho" class="form-control" [(ngModel)]="num2">
       <div class="row align-items-center">
         <div class="col">
-          <button class="btn btn-info" type="button" (click)="Resultado()">Sumar</button>
+          <button class="btn btn-info" type="button" (click)="Resultado()">Calcular perimetro rectangulo</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-danger" type="button" (click)="Limpiar()">Limpiar</button>
         </div>
       </div>
 

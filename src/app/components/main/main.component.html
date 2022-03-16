@@ -5,6 +5,8 @@
 
   <div class="col">
     <router-outlet (resultadoEvent)="ResultadoCalculo(resultado)"></router-outlet>
-    <app-mostrar-resultado [resultado]="resultado"></app-mostrar-resultado>
+    <div *ngIf="this.servicio.MostrarResultado">
+      <app-mostrar-resultado [resultado]="resultado"></app-mostrar-resultado>
+    </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component,Input, OnInit } from '@angular/core';
+import { CalculosService } from 'src/app/services/calculos.service';
 
 @Component({
   selector: 'app-main',
@@ -7,7 +8,7 @@ import { Component,Input, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(public servicio:CalculosService) { }
 
   ngOnInit(): void {
   }

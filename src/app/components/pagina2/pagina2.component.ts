@@ -18,9 +18,19 @@ export class Pagina2Component implements OnInit {
   constructor(public servicio:CalculosService) { }
 
   ngOnInit(): void {
+    this.servicio.MostrarResultado = true;
   }
   Resultado():void{
 
+    this.servicio.AreaTriangulo(this.num1,this.num2);
+  }
+
+  Limpiar():void{
+    this.servicio.resultado = 0;
+    this.num1=0;
+    this.num2=0;
+    this.resultado = "";
+    this.resultadoEvent.emit(this.resultado);
   }
 
 }

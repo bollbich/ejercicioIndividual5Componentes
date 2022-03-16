@@ -8,6 +8,16 @@ export class CalculosService {
 
   private _resultado:number=0;
 
+  private _MostrarResultado:boolean=true;
+
+  get MostrarResultado():boolean{
+    return this._MostrarResultado;
+  }
+
+  set MostrarResultado(MostrarResultado:boolean){
+    this._MostrarResultado = MostrarResultado;
+  }
+
   get resultado():number{
     return this._resultado;
   }
@@ -39,6 +49,16 @@ export class CalculosService {
 	public RaizCuadrada(valor1:number):void
 	{
 		this.resultado = Math.sqrt(valor1);
+  }
+
+  public AreaTriangulo(valor1:number, valor2:number):void
+	{
+		this.resultado = (valor1*valor2)/2
+  }
+
+  public PerimetroRectangulo(valor1:number, valor2:number):void
+	{
+		this.resultado = ((2*valor1)+(2*valor2))
   }
   constructor() { }
 }
