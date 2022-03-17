@@ -15,7 +15,7 @@ export class CustomPipesComponent implements OnInit{
   ngOnInit(): void {
   }
 
-  num1ForSize:number = 12334489;
+  num1ForSize:number = 1233;
 
   resultado:string='';
 
